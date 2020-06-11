@@ -8,11 +8,13 @@ class TextComponent extends StatefulWidget {
 class _TextComponentState extends State<TextComponent> {
   @override
   Widget build(BuildContext context) {
-    return new Text("Hello World",
-                style: TextStyle(
-                  color: Colors.blueAccent,
-                  fontSize: 20,
-                  fontStyle: FontStyle.italic,
-                ),);
+    return new Text(
+      "Hello World",
+      style: TextStyle(
+          color: Colors.black,
+          fontSize: 50.0,
+          fontStyle: FontStyle.italic,
+          fontWeight: FontWeight.w600),
+    );
   }
 }

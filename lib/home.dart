@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bmi_app/ui-component/button.dart';
 import 'package:flutter_bmi_app/ui-component/text.dart';
+import 'package:flutter_bmi_app/ui-component/texteditorcpmponent.dart';
 
 class BmiHomePage extends StatefulWidget {
   @override
@@ -17,9 +19,9 @@ class _BmiHomePageState extends State<BmiHomePage> {
       ),
       body: new Container(
           alignment: Alignment.center,
-          child: Center(
-            child: TextComponent(),
-          ),),
+          padding: EdgeInsets.fromLTRB(20,20,20,0),
+          child: Button(),
+          ),
     );
   }
 }
