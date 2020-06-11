@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bmi_app/ui-component/text.dart';
 
 class BmiHomePage extends StatefulWidget {
   @override
@@ -17,12 +18,7 @@ class _BmiHomePageState extends State<BmiHomePage> {
       body: new Container(
           alignment: Alignment.center,
           child: Center(
-            child: new Text("Hello World",
-                style: TextStyle(
-                  color: Colors.blueAccent,
-                  fontSize: 20,
-                  fontStyle: FontStyle.italic,
-                ),),
+            child: TextComponent(),
           ),),
     );
   }
