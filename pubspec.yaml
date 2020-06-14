@@ -21,6 +21,7 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  validators: ^2.0.0
   flutter:
     sdk: flutter
 
@@ -48,8 +49,8 @@ flutter:
   assets:
     - images/bmilogo.png
     - images/noresult.png
-    - images/obese.png
-    - images/overweight.png
+    - images/Obese.png
+    - images/Overweight.png
     - images/greatbody.jpg
     - images/underweight.png
   #   - images/a_dot_ham.jpeg

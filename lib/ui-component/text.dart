@@ -9,10 +9,10 @@ class _TextComponentState extends State<TextComponent> {
   @override
   Widget build(BuildContext context) {
     return new Text(
-      "Hello World",
+      "SUBMIT",
       style: TextStyle(
-          color: Colors.black,
-          fontSize: 50.0,
+          color: Colors.white,
+          fontSize: 30.0,
           fontStyle: FontStyle.italic,
           fontWeight: FontWeight.w600),
     );

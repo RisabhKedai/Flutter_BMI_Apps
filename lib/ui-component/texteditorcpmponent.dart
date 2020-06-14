@@ -1,37 +1,49 @@
 import 'package:flutter/material.dart';
 
 class TextEditor extends StatefulWidget {
+  String what;
+  String exmpl;
+  var icona;
+  TextEditingController cont;
+  TextEditor(this.what,this.exmpl,this.icona,this.cont);
   @override
-  _TextEditorState createState() => _TextEditorState();
+  _TextEditorState createState() => _TextEditorState(what,exmpl,icona,cont);
 }
 
 class _TextEditorState extends State<TextEditor> {
-  final TextEditingController _name = new TextEditingController();
+  String what;
+  String exmpl;
+  var icona;
+  TextEditingController cont;
+  _TextEditorState(this.what,this.exmpl,this.icona,this.cont);
+  // final TextEditingController _name = new TextEditingController();
   String name= "Hello";
+  
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         TextField(
-      controller: _name,
+      controller: cont,
       keyboardType: TextInputType.number,
       // onChanged: (value) => {
       //   print(value);
       // },
       onSubmitted: (value){
-        print(value);
-        // setState(() {
+        // print(value);
+        setState(() {
           name = value;
-        // });
+         });
       },
       decoration: InputDecoration(
-        labelText: "Name",
-        hintText: "Enter Your Name",
-        border: OutlineInputBorder(),
-        icon: Icon(Icons.person)
+        labelText: what,
+        hintText: exmpl,
+        border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
+        icon: Icon(icona),
+        contentPadding: EdgeInsets.all(8.0),
       ),
     ),
-      Text(name)
+      //Text(name)
       ],
     );
   }
